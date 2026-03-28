@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --color-hub-bg: #0b0e14;
+  --color-eringz-primary: #ec4899; /* Pinkish vibe for Eringz */
+  --color-kanban-accent: #22d3ee;  /* Cyan for your dev tasks */
+  
+  --text: #040327;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+  
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  /* background: var(--bg); */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  @apply transition-colors duration-1100 ease-in-out;
+}
+
+
+
+body {
+  background-color: #F7F7F7;
+  color: var(--text);
+  text-shadow: 1px 1px #e5e5f8;
+}
+
+.dark body {
+  background-color: #26282C;
+  background-image: linear-gradient(-240deg, #080607 #26282C, #080607);
+  color: var(--border);
+}
