@@ -1,6 +1,7 @@
 import './index.css'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Header from './components/shared/Header'
+import CircleButton from './components/molecules/CircleButton'
 import Footer from './components/shared/Footer'
 
 /**
@@ -16,7 +17,7 @@ function App() {
       <div className="h-screen overflow-hidden flex flex-col">
         <Header />
         <div className="flex-grow flex justify-center items-center">
-          Hello
+          <CircleButton />
         </div>
         <Footer />
       </div>
