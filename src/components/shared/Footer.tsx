@@ -12,7 +12,7 @@ const Footer = () => {
     const { theme } = useTheme()
     const isDark = theme === 'dark'
     return (
-        <footer className={`p-8 text-center border-t ${isDark ? 'border-white/40' : 'border-black/20'} shadow-sm  ${isDark ? 'shadow-white/20': ''}`}>
+        <footer className={`p-8 text-center border-t ${isDark ? 'border-green-900' : 'border-black/20'} shadow-4xl  ${isDark ? 'shadow-white/20': ''}`}>
           <div
             className="flex justify-center space-x-8"
           >
