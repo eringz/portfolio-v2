@@ -12,7 +12,7 @@ const ToggleSwitch = () => {
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.99 }}
       onClick={() => setTheme(isDark ? 'light' : 'dark')}
-      className={`p-1 w-16 h-6 flex ${isDark ? 'bg-white/20' : 'bg-gray-300'} ${isDark ? 'justify-end' : 'justify-start'} items-center rounded-full cursor-pointer transition-colors duration-600`}
+      className={`p-1 w-16 h-6 flex ${isDark ? 'bg-green-900' : 'bg-gray-300'} ${isDark ? 'justify-end' : 'justify-start'} items-center rounded-full cursor-pointer transition-colors duration-600`}
     >
       <motion.div
         layout
