@@ -33,6 +33,10 @@
   }
 }
 
+* {
+  transition: background-color 0.3 ease, color 0.3 ease, border-color 0.3 ease;
+}
+
 body {
   @apply transition-colors duration-1100 ease-in-out;
 }
