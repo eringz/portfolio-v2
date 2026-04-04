@@ -52,6 +52,7 @@ body {
   font-family: var(--sans);
   color: var(--bush);
   text-shadow: var(--shadow);
+  font: var(--mono)
 }
 
 .theme-ready, .theme-ready * {
@@ -67,7 +68,9 @@ body {
   background-color: #26282C;
   background-image: l1gradient(-240deg, #080607, #26282C, #080607);
   color: var(--dark-mint-green);
-  font: var(--mono);
 }
 
   
+.perspective-1000 { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

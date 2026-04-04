@@ -1,6 +1,8 @@
+import AndroidSimulator from '../blocks/HomeBlocks/AndroidSimulator'
+
 const Home = () => {
     return (
-        <div>Home Page</div>
+        <AndroidSimulator />
     )
 }
 

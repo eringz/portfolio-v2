@@ -1,7 +1,7 @@
 import './index.css'
 import { ThemeProvider } from './contexts/ThemeContext'
 import Header from './components/shared/Header'
-import CircleButton from './components/molecules/CircleButton'
+import Nav from './components/shared/Nav'
 import Footer from './components/shared/Footer'
 
 /** --------------------------- PORTFOLIO ELEMENT ---------------------- */
@@ -36,14 +36,15 @@ import Footer from './components/shared/Footer'
  * BLOGS
  */
 
-function App() {
+function App({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider>
       <div className="h-screen overflow-hidden flex flex-col">
         <Header />
-        <div className="flex-grow flex justify-center items-center">
-          <CircleButton />
-        </div>
+          <main className="flex justify-center items-center h-full">
+            {children}
+          </main>
+          <Nav />
         <Footer />
       </div>
     </ThemeProvider>

@@ -1,4 +1,4 @@
-import ToggleSwitch from '../atoms/ToggleSwitch'
+import ToggleSwitch from '../elements/ToggleSwitch'
 import { useTheme } from '../../contexts/ThemeContext'
 import { useState, useEffect } from 'react';
 
