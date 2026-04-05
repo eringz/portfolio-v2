@@ -25,17 +25,21 @@ const AndroidSimulator = () => {
     }, [])
 
     return (
+        
         <div className="w-[300px] h-[600px] border-[8px] border-black/30 rounded-[36px] shadow-2xl shadow-blue-green blur-2xs">
-            <div className="flex flex-col p-1 h-full rounded-[36px] -inset-0 bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-blue-500/50 via-transparent to-transparent opacity-75">
-                {/** TOP  */}
+            <div 
+                className="flex flex-col p-1 h-full rounded-[36px] -inset-0 bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-blue-500/50            via-transparent to-transparent opacity-75"
+            >
+                    {/** TOP  */}
                 <div className="flex justify-center items-center h-6 w-full p-2">
                     <div className="flex justify-center items-center w-4 h-4  bg-black border border-gray-800 rounded-full" > 
                         <div className="w-1.5 h-1.5 rounded-full bg-blue-900 animate-pulse"></div>
                     </div>
                 </div>
 
-                {/** CONTENT */}
+                    {/** CONTENT */}
                 <div className="flex flex-1 flex-col gap-4 justify-center items-center">
+                    {/** ICON */}
                     <div className="relative flex justify-center items-center w-24 h-24">
                         <svg 
                             viewBox="0 0 100 100"
@@ -46,14 +50,13 @@ const AndroidSimulator = () => {
                                 cy="50"
                                 r="45"
                                 stroke={icons[index].color}
-                                strokeWidth="2"
+                                strokeWidth="1"
                                 fill="transparent"
-                                strokeDasharray="0 1"
+                                strokeDasharray="0 0"
                                 key={index}
                                 initial={{ pathLength: 0, opacity: 0 }}
                                 animate={{ pathLength: 1, opacity: 1 }}
                                 transition={{ duration: 1.5, ease: "easeInOut" }}
-                                className="shadow-xl shadow-white"
                             />
                         </svg>
                         <AnimatePresence mode="wait">
@@ -67,7 +70,6 @@ const AndroidSimulator = () => {
                             >
                                 {icons[index].component}
                             </motion.div>
-                            
                         </AnimatePresence>
                     </div>
                     
@@ -105,18 +107,16 @@ const AndroidSimulator = () => {
                             ))}
                         </motion.div>
                     </AnimatePresence>
-
                 </div>
 
-                {/** Bottom */}
+                    {/** Bottom */}
                 <div className="flex justify-center">
                     <div className="w-20 h-1 bg-white/10 rounded" />
                 </div>
             </div>
-            
-            
-
         </div>
+    
+        
     )
 }
 
