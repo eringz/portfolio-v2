@@ -43,7 +43,7 @@ function App({ children }: { children: React.ReactNode }) {
         <Header />
           <main className="flex justify-center items-center h-full">
             {children}
-          </main>
+          </main> 
           <Nav />
         <Footer />
       </div>
