@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface ContributionDay {
     date: string;
@@ -70,16 +71,22 @@ const GithubStats = () => {
   if (!stats) return <p className="text-red-500">Failed to load stats.</p>;
 
   return (
-    <div className="p-6 rounded-2xl shadow-xl w-full">
+    <motion.div 
+        initial={{ x: -20, scale: 0, opacity: 0 }}
+        animate={{ x: 1, scale: 1, opacity: 1 }}
+        transition={{
+            duration: 1.2,
+        }}
+        className="p-6 rounded-2xl shadow-2xl w-full"
+    >
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-xl font-bold text-emerald-400">GitHub Activity</h2>
-        <span className="text-3xl font-extrabold">{stats.totalContributions}</span>
+        <h2 className="text-xl font-bold text-emerald-400 text-shadow-lg">GitHub Activity</h2>
       </div>
-      <p className="text-slate-400 text-sm mb-4">Total contributions this year</p>
+      <p className="text-slate-400 text-sm mb-4"><span className="text-emerald-400 font-extrabold">{stats.totalContributions}</span> contributions in the last year</p>
       
       {/* Mini Heatmap Render */}
       <div className="grid grid-flow-col gap-1 overflow-x-auto pb-2 custom-scrollbar">
-        {stats.weeks.map((week, wIndex) => (
+        {stats.weeks.slice(12).map((week, wIndex) => (
           <div key={wIndex} className="flex flex-col gap-1">
             {week.contributionDays.map((day, dIndex) => (
               <div
@@ -92,8 +99,8 @@ const GithubStats = () => {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-xs text-slate-500 text-right">Last 12 weeks activity</p>
-    </div>
+      {/* <p className="mt-4 text-xs text-slate-500 text-right">Last 12 weeks activity</p> */}
+    </motion.div>
   );
 };
 
