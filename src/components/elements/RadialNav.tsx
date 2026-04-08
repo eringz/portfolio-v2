@@ -30,7 +30,7 @@ const RadialNav = () => {
         <div
             onMouseEnter={() => setIsDisplay(true) }
             onMouseLeave={() => setIsDisplay(false)}
-            className="relative flex justify-center items-center w-40 h-40"
+            className="relative flex justify-center items-center w-24 h-24"
         >
             <motion.div
                 animate={{boxShadow: isDisplay ? "0 0 30px rgba(34, 197, 94, 0.6)" : "0 0 15px rgba(34, 197, 94, 0.2)"}}
