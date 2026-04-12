@@ -1,0 +1,44 @@
+.terminal-window {
+    background: rgba(231, 241, 241, 0.95);
+    /* box-shadow: 0 0 20px rgba(0, 255, 65, 0.1); */
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-terminal-window {
+    background: rgba(10, 10, 10, 0.95);
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.terminal-window:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.15), 50%),
+                linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0.03)); */
+
+    z-index: 2;
+    background-size: 100% 3px, 3px 100%;
+    pointer-events: none;
+}
+
+.terminal-flicker {
+    animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 0.98 }
+    100% { opacity: 1 }
+}
+
+.text-glow {
+    text-shadow: 0 0 5px rgba(52, 211, 153, 0);
+}
