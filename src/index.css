@@ -60,7 +60,8 @@ body {
   background-image 0.6s ease-in-out, 
   color 0.6s ease-in-out,
   font-family 0.6s ease-in-out, 
-  border-color 0.6s ease-in-out
+  border-color 0.6s ease-in-out,
+  shadow 0.6s ease-in-out
   !important
 }
 
