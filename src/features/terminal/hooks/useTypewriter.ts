@@ -9,7 +9,7 @@ export const useTypewriter = ( text: string, delay: number, speed: number = 0.6)
     useEffect(() => {
         const controls = animate(count, text.length, {
             type: "tween",
-            duration: text.length * speed,
+            duration: 0.06,
             delay: delay,
             ease: "linear",
         });
