@@ -3,11 +3,19 @@
 :root {
   
   /* Color Section */
+  --pale-grey: #FCFDFC;
+  --green-white: #E1EDE5;
+
+  --mercury: #E5E5E5;
+  --oslo-grey: #8A8A8A;
+  
+
+
   --dark-mint-green: #0ec454;
+  
   --midnight-moss: #000201;
   --bush: #062C14;
-  --green-white: #E1EDE5;
-  --pale-grey: #FCFDFC;
+  --randoon-green: #1a1a1a;
 
 
   
@@ -66,7 +74,8 @@ body {
 }
 
 .dark body {
-  background-color: #26282C;
+  /* background-color: #26282C; */
+  background-color: var(--randoon-green);
   background-image: l1gradient(-240deg, #080607, #26282C, #080607);
   color: var(--dark-mint-green);
 }
