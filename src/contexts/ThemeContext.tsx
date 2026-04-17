@@ -17,14 +17,10 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
       if (savedTheme) return savedTheme;
 
       const hour = new Date().getHours();
-      console.log(`Hour: ${hour}`)
 
       return (hour >= 19 || hour < 6) ? 'dark' : 'light';
 
   });
-
-  console.log(theme)
-
 
   useLayoutEffect(() => {
     const root = window.document.documentElement;
