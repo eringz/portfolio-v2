@@ -17,7 +17,7 @@ export const TerminalRevealElement = ({ text, delay }: Props) => {
           delay: delay, 
           ease: "easeInOut" 
         }}
-        className="block text-emerald-200 font-mono whitespace-nowrap overflow-hidden text-glow"
+        className="block whitespace-nowrap overflow-hidden text-glow"
       >
         {text}
       </motion.span>
