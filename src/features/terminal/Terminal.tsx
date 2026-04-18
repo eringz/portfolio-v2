@@ -4,6 +4,7 @@ import { TerminalRevealElement } from './components/TerminalReveal';
 import { motion } from 'framer-motion';
 import ronPhoto from "@/assets/ron.png";
 import { useTheme } from "@/contexts/ThemeContext";
+import TerminalContent  from '@/features/terminal/components/TerminalContent';
 
 
 const Terminal = () => {
@@ -28,13 +29,17 @@ const Terminal = () => {
                             key={index}
                             className="flex flex-wrap items-center gap-x-2"
                         >
-                            <span>
+                            {/* <span>
                                 {line.type === "command" ? "λ" : ">"} {line.label}
-                            </span>
+                            </span> */}
                             <TerminalRevealElement 
                                 text={line.value}
                                 delay={terminalSettings.lineStagger * index}
                             />
+                            {/* <TerminalContent 
+                                text="Ronasfjsdjfs;kjfsdkfj"
+                                delay={1}
+                            /> */}
                         </div>
                     ))}
                 </div>
@@ -42,13 +47,13 @@ const Terminal = () => {
                     <img 
                         src={ronPhoto}
                         alt="ron"
-                        className="w-40 h-40 rounded-full border border-green-900"
+                        className="w-40 h-40 rounded-full border"
                     />
                 </div>
  
             </div>
         </div>
     )
-}
+};
 
 export default Terminal
