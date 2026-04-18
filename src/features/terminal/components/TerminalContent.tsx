@@ -7,7 +7,7 @@ interface Props {
     className?: string;
 }
 
-export const TerminalTextElement = ({ text, delay, className } : Props) => {
+const TerminalContent = ({ text, delay, className } : Props) => {
     const displayText = useTypewriter(text, delay);
 
     return (
@@ -16,3 +16,5 @@ export const TerminalTextElement = ({ text, delay, className } : Props) => {
         </motion.span>
     )
 }
+
+export default TerminalContent;
