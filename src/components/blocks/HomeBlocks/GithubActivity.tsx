@@ -28,7 +28,7 @@ const GithubStats = () => {
         const USERNAME = import.meta.env.VITE_GITHUB_USERNAME;
 
         const query = `
-          query($userName:String!) {
+            query($userName:String!) {
             user(login: $userName) {
               contributionsCollection {
                 contributionCalendar {
@@ -56,6 +56,7 @@ const GithubStats = () => {
         });
 
         const result = await response.json();
+        console.log(`Result GBA: ${result.data.user.contributionsCollection.contributionCalendar} `)
         setStats(result.data.user.contributionsCollection.contributionCalendar);
       } catch (error) {
         console.error("Error fetching GitHub data:", error);
