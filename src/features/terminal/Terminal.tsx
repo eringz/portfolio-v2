@@ -4,7 +4,7 @@ import { TerminalRevealElement } from './components/TerminalReveal';
 import { motion } from 'framer-motion';
 import ronPhoto from "@/assets/ron.png";
 import { useTheme } from "@/contexts/ThemeContext";
-import TerminalContent  from '@/features/terminal/components/TerminalContent';
+
 
 
 const Terminal = () => {
@@ -12,7 +12,7 @@ const Terminal = () => {
     const isDark = theme === 'dark';
 
     return (
-        <div className={`p-6 w-full ${isDark ? 'dark-terminal-window' : 'terminal-window'} terminal-flicker border border-green-900/40 rounded-lg font-mono text-sm shadow-lg transition duration-1000`}>
+        <div className={`p-6 w-full ${isDark ? 'dark-terminal-window' : 'terminal-window'}  rounded-lg font-mono text-sm shadow-lg transition duration-1000`}>
             {/** HEADER */}
             <div className="flex justify-center items-center gap-2 p-4 mb-2 border-b border-green-900/20">
                 <div className="flex gap-1.5">
