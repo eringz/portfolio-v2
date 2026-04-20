@@ -1,6 +1,5 @@
 import "./assets/terminal.css";
-import { terminalLines, terminalSettings } from './data/terminalConfig';
-import { TerminalRevealElement } from './components/TerminalReveal';
+
 import DeviceSpecs from './device/DeviceSpecs';
 import ronPhoto from "@/assets/ron.png";
 import { useTheme } from "@/contexts/ThemeContext";
