@@ -8,13 +8,13 @@ import GithubActivity from '@/features/github/components/GithubActivity';
 const Home = () => {
 
     return (
-        <div className="flex h-full w-full">
-            <div className="flex flex-col gap-16 p-24 w-1/2 justify-between items-center">
+        <div className="flex flex-col justify-center item-center lg:flex-row gap-y-8 p-6 lg:w-full h-full overflow-x-hidden">
+            <div className="flex flex-col gap-y-8 lg:w-2/3 justify-between items-center">
                 <Terminal />
                 {/* <GithubActivity /> */}
                 <GithubActivity />
             </div>
-            <div className="w-1/2 h-full flex flex-col justify-center items-center">
+            <div className="w-full h-full flex flex-col justify-center items-center">
                 <AndroidSimulator />
             </div>
         </div>
