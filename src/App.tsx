@@ -39,7 +39,7 @@ import Footer from './components/shared/Footer'
 function App({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider>
-      <div className="h-screen overflow-hidden flex flex-col">
+      <div className="h-screen flex flex-col lg:overflow-hidden">
         <Header />
           <main className="flex justify-center items-center h-full">
             {children}
