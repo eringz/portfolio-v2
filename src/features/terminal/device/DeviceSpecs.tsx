@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { DeviceSpecs } from '../types/index.ts';
+import { motion } from 'framer-motion';
 
 const getEasyOS = () => {
   const platform = navigator.platform.toLowerCase();
@@ -37,7 +38,9 @@ const DeviceSpecs = () => {
 
 
     return (
-        <div className="flex flex-col p-4 w-48 lg:w-128 font-mono rounded-lg">
+        <motion.div 
+            className="flex flex-col p-4 w-48 lg:w-128 font-mono rounded-lg"
+        >
             <p> Your system Specs...</p>
             {/* <p> OS: {specs?.os}</p> */}
             <p> OS: {osName}</p>
@@ -45,7 +48,7 @@ const DeviceSpecs = () => {
             <p> RAM: ~{specs?.ram}</p>
             <p> RESOLUTION: {specs?.screen}</p>
             <p> BATTERY: {specs?.battery}</p>
-        </div>
+        </motion.div>
     )
 }
 
