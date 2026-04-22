@@ -24,7 +24,7 @@ const DeviceSpecs = () => {
             setSpecs({
                 os: navigator.platform,
                 cores: navigator.hardwareConcurrency || "Unknown",
-                ram: navigator.deviceMemory ? `${navigator.deviceMemory}GB` : "Unknown",
+                ram: (navigation as any).deviceMemory ? `${(navigation as any).deviceMemory}GB` : "Unknown",
                 screen: `${window.screen.width}x${window.screen.height}`,
                 battery: battery ? `${Math.round(battery.level * 100)}%` : "N/A",
             });
