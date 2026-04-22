@@ -1,4 +1,4 @@
-export interface DeviceSpecs {
+export interface IDeviceSpecs {
     os: string;
     cores: number | string;
     ram: string;

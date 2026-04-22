@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { DeviceSpecs } from '../types/index.ts';
+import type { IDeviceSpecs  } from '../types/index.ts';
 import { motion } from 'framer-motion';
 
 const getEasyOS = () => {
@@ -13,7 +13,7 @@ const getEasyOS = () => {
 };
 
 const DeviceSpecs = () => {
-    const [specs, setSpecs] = useState<DeviceSpecs | null>(null);
+    const [specs, setSpecs] = useState<IDeviceSpecs | null>(null);
     const osName = getEasyOS();
     
     useEffect(() => {
