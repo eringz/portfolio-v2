@@ -1,5 +1,5 @@
 import "./assets/terminal.css";
-import DeviceSpecs from './device/DeviceSpecs';
+import DeviceSpecsComponent from './device/DeviceSpecs';
 import ronPhoto from "@/assets/ron.png";
 import { useTheme } from "@/contexts/ThemeContext";
 
@@ -22,7 +22,7 @@ const Terminal = () => {
 
             <div className="flex justify-between items-end">
                 <div className="space-y-3">
-                    <DeviceSpecs />
+                    <DeviceSpecsComponent />
                     {/* {terminalLines.map((line, index) => (
                         <div
                             key={index}

@@ -23,7 +23,7 @@ const getEasyOS = () => {
     return 'Unknown OS';
 };
 
-const DeviceSpecs = () => {
+const DeviceSpecsComponent = () => {
     const [specs, setSpecs] = useState<TerminalDeviceData | null>(null);
     const osName = getEasyOS();
     
@@ -67,4 +67,4 @@ const DeviceSpecs = () => {
     );
 };
 
-export default DeviceSpecs;
+export default DeviceSpecsComponent;
