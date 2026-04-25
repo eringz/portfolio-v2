@@ -1,5 +1,5 @@
 import "./assets/terminal.css";
-import DeviceSpecsComponent from './device/DeviceSpecs';
+import DeviceSpecsComponent from './device/DeviceSpecsComponent';
 import ronPhoto from "@/assets/ron.png";
 import { useTheme } from "@/contexts/ThemeContext";
 
