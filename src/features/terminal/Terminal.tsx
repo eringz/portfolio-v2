@@ -20,34 +20,15 @@ const Terminal = () => {
                 </div>
             </div>
 
-            <div className="flex justify-between items-end">
+            <div className="flex justify-even items-end">
                 <div className="space-y-3">
                     <DeviceSpecsComponent />
-                    {/* {terminalLines.map((line, index) => (
-                        <div
-                            key={index}
-                            className="flex flex-wrap items-center gap-x-2"
-                        >
-                            
-                            <span>
-                                {line.type === "command" ? "λ" : ">"} {line.label}
-                            </span>
-                            <TerminalRevealElement 
-                                text={line.value}
-                                delay={terminalSettings.lineStagger * index}
-                            />
-                            <TerminalContent 
-                                text="Ronasfjsdjfs;kjfsdkfj"
-                                delay={1}
-                            />
-                        </div>
-                    ))} */}
                 </div>
                 <div className="w-full">
                     <img 
                         src={ronPhoto}
                         alt="ron"
-                        className="w-12 h-12 lg:w-40 lg:h-40  rounded-full border"
+                        className="w-12 h-12 lg:w-24 lg:h-24  rounded-full border"
                     />
                 </div>
  
