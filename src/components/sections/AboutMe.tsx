@@ -10,7 +10,7 @@ const AboutMe = () => {
 
   return (
     <motion.div 
-      className="min-h-full text-[#4af626] p-8 font-mono"
+      className="min-h-full h-full text-[#4af626] p-8 font-mono overflow-auto"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
