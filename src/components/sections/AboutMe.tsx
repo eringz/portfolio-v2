@@ -38,7 +38,7 @@ const AboutMe = () => {
              />
           </div>
           <div className="mt-4 text-center">
-            <h2 className="text-xl font-bold italic">"Build. Test. Fix."</h2>
+            <h2 className="text-xl font-bold italic">Build. Test. Fix.</h2>
           </div>
         </div>
 
